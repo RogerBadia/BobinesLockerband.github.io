@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Organitzador de bobines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Organitzador de bobines</h1>
+
+
+    <!-- ============================== -->
+    <!-- MENÚ PRINCIPAL -->
+    <!-- ============================== -->
+
+    <div class="menu">
+
+        <button id="btnUtilitzar">
+            Utilitzar un teixit
+        </button>
+
+        <button id="btnCrear">
+            Crear nou teixit
+        </button>
+
+    </div>
+
+
+    <!-- ============================== -->
+    <!-- PANTALLA UTILITZAR -->
+    <!-- ============================== -->
+
+    <div id="pantallaUtilitzar" class="pantalla">
+
+        <h2>Seleccionar teixit</h2>
+
+
+        <div class="selector-container">
+
+            <select id="selectorTeixit">
+
+                <option value="">
+                    -- Selecciona un teixit --
+                </option>
+
+            </select>
+
+
+            <button id="btnEditar" disabled>
+                ✏️ Editar
+            </button>
+
+
+            <button id="btnEliminar" disabled>
+                🗑️ Eliminar
+            </button>
+
+        </div>
+
+
+        <div class="contenidor">
+
+
+            <!-- ORGANITZADOR -->
+
+            <div id="rack">
+
+                <img
+                    src="carros_quadri.png"
+                    id="imatge"
+                >
+
+            </div>
+
+
+            <!-- INFORMACIÓ -->
+
+            <div class="info">
+
+                <h2>Informació</h2>
+
+                <p>
+                    <b>Teixit:</b>
+                    <span id="nomTeixit">-</span>
+                </p>
+
+                <p>
+                    <b>Posicions:</b>
+                    <span id="numeroPosicions">-</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================== -->
+    <!-- PANTALLA CREAR / EDITAR -->
+    <!-- ============================== -->
+
+    <div
+        id="pantallaCrear"
+        class="pantalla ocult"
+    >
+
+        <h2 id="titolPantallaCrear">
+            Crear nou teixit
+        </h2>
+
+
+        <!-- NOM -->
+
+        <div class="nom-teixit">
+
+            <label for="nomNouTeixit">
+                Nom del teixit:
+            </label>
+
+            <input
+                type="text"
+                id="nomNouTeixit"
+                placeholder="Ex: Teixit hivern 2026"
+            >
+
+        </div>
+
+
+        <p>
+            Fes clic sobre les posicions on
+            s'han de col·locar les bobines.
+        </p>
+
+
+        <div class="contenidor">
+
+
+            <!-- ORGANITZADOR -->
+
+            <div id="rackCrear">
+
+                <img
+                    src="carros_quadri.png"
+                    id="imatgeCrear"
+                >
+
+            </div>
+
+
+            <!-- INFORMACIÓ -->
+
+            <div class="info">
+
+                <h2>Posicions</h2>
+
+                <p>
+                    <b>Seleccionades:</b>
+                    <span id="contadorSeleccionades">
+                        0
+                    </span>
+                </p>
+
+
+                <button id="guardarTeixit">
+                    Guardar teixit
+                </button>
+
+
+                <button id="cancelarEdicio">
+                    Cancel·lar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* PANTALLES */
+
+.pantalla {
+    margin-top: 20px;
+}
+
+.ocult {
+    display: none;
+}
+
+
+/* CONTENIDOR */
+
+.contenidor {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+
+/* IMATGE */
+
+#rack,
+#rackCrear {
+    position: relative;
+    display: inline-block;
+}
+
+#imatge,
+#imatgeCrear {
+    width: 1250px;
+    display: block;
+}
+
+
+/* PUNTS */
+
+.punt {
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 150, 255, 0.35);
+
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    transform: translate(-50%, -50%);
+
+    box-sizing: border-box;
+}
+
+
+/* PUNT SELECCIONAT */
+
+.punt.seleccionat {
+    background: limegreen !important;
+}
+
+
+/* INFORMACIÓ */
+
+.info {
+    min-width: 220px;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+}
+
+
+/* SELECTOR */
+
+select {
+    padding: 8px;
+
+    font-size: 16px;
+
+    min-width: 250px;
+}
+
+
+/* INPUT */
+
+input {
+    padding: 8px;
+
+    font-size: 16px;
+
+    margin-left: 10px;
+
+    width: 250px;
+}
+
+
+/* BOTÓ GUARDAR */
+
+#guardarTeixit {
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.selector-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.selector-container button {
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nom-teixit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#guardarTeixit,
+#cancelarEdicio {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cancelarEdicio {
+    margin-left: 10px;
+}
